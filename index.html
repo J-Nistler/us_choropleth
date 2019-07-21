@@ -1,6 +1,6 @@
     
     <html>
-    <body>
+    <head>
         <meta http-equiv='Content-Type' content='text/html' charset='utf-8'/>
         <script type='text/javascript' src='https://www.google.com/jsapi'></script>
         <script type='text/javascript'>
@@ -14,13 +14,18 @@
     data.addRows([[{f:'Alabama', v:'US-AL'},1], [{f:'California', v:'US-CA'},48], [{f:'Colorado', v:'US-CO'},2], [{f:'Connecticut', v:'US-CT'},1], [{f:'Florida', v:'US-FL'},12], [{f:'Georgia', v:'US-GA'},5], [{f:'Illinois', v:'US-IL'},27], [{f:'Iowa', v:'US-IA'},2], [{f:'Louisiana', v:'US-LA'},1], [{f:'Massachusetts', v:'US-MA'},5], [{f:'Michigan', v:'US-MI'},5], [{f:'New Hampshire', v:'US-NH'},1], [{f:'New Jersey', v:'US-NJ'},3], [{f:'New York', v:'US-NY'},80], [{f:'North Carolina', v:'US-NC'},1], [{f:'Ohio', v:'US-OH'},3], [{f:'Oregon', v:'US-OR'},2], [{f:'Pennsylvania', v:'US-PA'},2], [{f:'Vermont', v:'US-VT'},1], [{f:'Virginia', v:'US-VA'},2], [{f:'Washington', v:'US-WA'},11], [{f:'District of Columbia', v:'US-DC'},7]]);
 
           var options = {'title':'Map',
-     'width':1100,'height':800,'region':'US','resolution':'provinces'};
+     'width':550,'height':400,'region':'US','resolution':'provinces'};
 
           var container = document.getElementById('map_canvas');
           var geochart = new google.visualization.GeoChart(container);
           geochart.draw(data, options);
       };
       </script>
+    </head>
+
+    <body>
+      <div id='map_canvas'></div>
     </body>
+
     </html>
     
